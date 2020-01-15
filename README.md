@@ -40,7 +40,7 @@ you need python, node.js, express,
 
 ### Images
 
-![olaf from Frozen](https://i.pinimg.com/originals/2a/54/0f/2a540f2b4e0bcf52f27b9e6d90f50a72.jpg)
+<!-- ![olaf from Frozen](https://i.pinimg.com/originals/2a/54/0f/2a540f2b4e0bcf52f27b9e6d90f50a72.jpg) -->
 
 `<img src="" alt="">`
 
