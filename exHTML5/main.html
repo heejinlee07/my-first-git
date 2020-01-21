@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>웹카페</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <header class="header">헤더</header>
-        <div class="visual">비쥬얼</div>
-        <main class="main">
-            <div class="group group1">그룹1</div>
-            <div class="group group2">그룹2</div>
-            <div class="group group3">그룹3</div>
-        </main>
-        <article class="slogan">슬로건</article>
-        <div class="footer-bg">
-            <footer class="footer">푸터</footer>
-        </div>
+      <header class="header">
+        <h1 class="logo">
+          <a href="./index.html">
+            <img src="./images/logo.png" alt="Web Cafe" />
+            <!-- 이미지가 장식용이면 ""null 값으로 빈 태그로 두어도 된다. 그렇지 않고 의미가 있다면 값을 준다. -->
+          </a>
+        </h1>
+        <ul class="member">
+          <li class="bar-none"><a href="#">홈</a></li>
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">사이트맵</a></li>
+          <li><a href="#">english</a></li>
+        </ul>
+        <nav class="navigation">
+          <h2 class="a11y-hidden">메인 메뉴</h2>
+          <ul class="menu">
+            <li class="menu-item menu-act" tabindex="0">
+              <span class="menu-button">
+                HTML에 대해
+              </span>
+              <ul class="submenu">
+                <li>
+                  <a href="#" class="icon-dot-circled">
+                    HTML5 소개
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="icon-dot-circled">
+                    래퍼런스 소개
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="icon-dot-circled">
+                    활용예제
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="visual">비쥬얼</div>
+      <main class="main">
+        <div class="group group1">그룹1</div>
+        <div class="group group2">그룹2</div>
+        <div class="group group3">그룹3</div>
+      </main>
+      <article class="slogan">슬로건</article>
+      <div class="footer-bg">
+        <footer class="footer">푸터</footer>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
