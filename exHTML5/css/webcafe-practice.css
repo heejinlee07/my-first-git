@@ -2,7 +2,6 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
 @import url(./fontello.css);
 @import url(./normalize.css);
-/*기본 박스 사이징 재 설정 (width에 border-width와 padding을 포함하여 계산)*/
 
 *,
 *::before,
@@ -34,7 +33,7 @@ legend {
   content: "";
   clear: both;
 }
-/*기본설정*/
+/* 기본설정 */
 a {
   text-decoration: none;
   color: inherit;
@@ -67,14 +66,12 @@ body {
   width: 940px;
   margin: 0 auto;
 }
-
 .header {
   background-color: #fff;
   border-radius: 0 0 15px 15px;
   padding: 0 30px;
   position: relative;
 }
-
 /*로고*/
 .logo {
   margin: 0;
@@ -83,7 +80,6 @@ body {
   left: 62px;
   /* z-index: 10; */
 }
-
 /*멤버링크*/
 .member {
   margin: 0;
@@ -185,7 +181,6 @@ body {
   height: 120px;
   position: relative;
 }
-
 @keyframes textAni {
   0% {
     font-size: 12px;
@@ -252,7 +247,6 @@ body {
   /* padding: 30px 15px; */
   border-radius: 15px 15px 0 0;
 }
-
 .group {
   /* float: left;
     height: 60vh;
@@ -346,112 +340,6 @@ body {
   display: inline-block;
   padding: 8px 0;
 }
-
-/*유효성 검사 배너 */
-.validation-list {
-  margin: 25px 0 0 0;
-  padding-left: 0;
-  list-style-type: none;
-}
-.validation-list li a {
-  display: block;
-  border: 1px solid #aaa;
-  border-radius: 35px;
-  margin-top: 10px;
-  padding: 7px 10px 8px 45px;
-  background: url(./images/validation_icon.png) no-repeat 20px 50%,
-    #ccc linear-gradient(180deg, #bbb, #eee);
-}
-
-.validation-list a:hover {
-  color: red;
-}
-
-/* 웹 관련 용어 */
-.term {
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  margin-top: 20px;
-  background: #ccc linear-gradient(180deg, #bbb, #eee);
-  padding: 15px;
-}
-.term-heading {
-  margin: 0;
-  font-size: 1.6rem;
-}
-.term-list {
-  margin: 15px 0 0 0;
-}
-.term-list div {
-  margin-top: 15px;
-}
-.term-list dd {
-  margin-left: 0;
-}
-.term-list-subject,
-.term-list-brief {
-  width: 145px;
-  float: right;
-}
-.term-list-subject {
-  color: #296897;
-  font-weight: 400;
-}
-.term-list-thumbnail {
-  float: left;
-}
-.term-list-thumbnail img {
-  vertical-align: top;
-}
-.term-list-brief {
-  margin-top: 5px;
-  line-height: 1.6;
-}
-.change-layout .term-list-subject,
-.change-layout .term-list-brief {
-  float: left;
-}
-.change-layout .term-list-thumbnail {
-  float: right;
-}
-
-/* 검색 폼 */
-.search-form {
-  background: #ccc linear-gradient(180deg, #bbb, #eee);
-  border: 1px solid #aaa;
-  border-bottom-color: #fff;
-  border-radius: 15px 15px 0 0;
-  padding: 15px 25px 10px 25px;
-}
-.search-form fieldset {
-  border: 0;
-  padding: 0;
-  margin: 0;
-}
-
-.search-form input[type="search"] {
-  width: 200px;
-  margin: 0 4px;
-  padding: 1px 1px 1px 0.5em;
-}
-.search-form label,
-.search-form input[type="search"],
-.btn-search {
-  vertical-align: middle;
-}
-.search-form input[type="search"],
-.btn-search {
-  height: 24px;
-  border: 1px solid #aaa;
-  border-radius: 3px;
-}
-.btn-search {
-  color: #fff;
-  background-color: #333;
-  padding: 0 8px;
-  font-size: 1.2rem;
-}
-/* 슬로건 */
 .slogan {
   background-color: orange;
   height: 10vh;
@@ -464,7 +352,7 @@ body {
     flex-direction: row;
     justify-content: center; */
 }
-/* 푸터 */
+
 .footer {
   background-color: yellow;
   height: 10vh;
