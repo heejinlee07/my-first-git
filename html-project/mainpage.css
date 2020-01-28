@@ -1,7 +1,8 @@
 @charset "utf-8";
-
 @import url("./normalize.css");
-
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
 .navigation {
   height: 80px;
   border-bottom: 1px solid lightgray;
@@ -30,4 +31,48 @@
 }
 .menu-item {
   padding: 0 14px;
+}
+.main-bg {
+  position: absolute;
+  height: 860px;
+  width: 100%;
+  z-index: -1;
+}
+.main-bg img {
+  width: 100%;
+}
+.visual {
+  max-width: 830px;
+  margin: 0 auto;
+  padding: 200px 0 0;
+  color: #fff;
+}
+.visual-text1,
+.visual-text2 {
+  font-size: 60px;
+  line-height: 1.5;
+  font-weight: 900;
+}
+.visual-text3,
+.visual-text4 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: normal;
+}
+.visual-button {
+  display: inline-block;
+  margin-top: 80px;
+  width: 250px;
+  height: 56px;
+  background-color: rgb(5, 92, 245);
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  outline: none;
+  font-weight: bold;
+  padding: 1px 6px;
+  margin: 80px 0 0;
+  line-height: 56px;
 }
