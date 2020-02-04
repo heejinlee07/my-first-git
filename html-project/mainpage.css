@@ -2,10 +2,18 @@
 @import url("./normalize.css");
 * {
   font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+}
+.container {
+  margin: 0 auto;
+  width: 830px;
 }
 .navigation {
   height: 80px;
   border-bottom: 1px solid lightgray;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 .navigation-inner {
   display: flex;
@@ -27,40 +35,41 @@
 .menu-style {
   display: flex;
 }
-.menu-right {
-}
+
 .menu-item {
   padding: 0 14px;
 }
-.main-bg {
-  position: absolute;
+
+/* 화면 메인 이미지 */
+.cover {
+  background: url(./main-01-desktop.jpg) no-repeat;
+  background-size: cover;
   height: 860px;
-  width: 100%;
-  z-index: -1;
 }
-.main-bg img {
-  width: 100%;
+
+.main-background {
+  width: 830px;
+  padding-top: 200px;
+  margin-left: 200px;
 }
-.visual {
-  max-width: 830px;
-  margin: 0 auto;
-  padding: 200px 0 0;
-  color: #fff;
+.main-bg-heading,
+.main-bg-subheading {
+  color: rgb(255, 255, 255);
 }
-.visual-text1,
-.visual-text2 {
+
+.main-bg-heading {
+  line-height: 80px;
+  margin-bottom: 16px;
   font-size: 60px;
-  line-height: 1.5;
   font-weight: 900;
 }
-.visual-text3,
-.visual-text4 {
+.main-bg-subheading {
   font-size: 20px;
-  line-height: 30px;
   font-weight: normal;
+  line-height: 30px;
 }
-.visual-button {
-  display: inline-block;
+
+.main-bg-button {
   margin-top: 80px;
   width: 250px;
   height: 56px;
@@ -72,7 +81,294 @@
   color: white;
   outline: none;
   font-weight: bold;
-  padding: 1px 6px;
-  margin: 80px 0 0;
-  line-height: 56px;
+  border: none;
+  cursor: pointer;
+}
+
+/* 메인 컨텐츠 -1 */
+.container {
+  box-sizing: border-box;
+  width: 845px;
+  margin: 0 auto;
+}
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.first-content {
+  padding-top: 88px;
+  padding-bottom: 87px;
+  border-bottom: 0.5px solid rgb(218, 221, 226);
+}
+.first-content-head {
+  float: left;
+}
+.first-content-heading {
+  margin-bottom: 18px;
+  font-size: 31.2px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  color: rgb(46, 48, 53);
+  letter-spacing: -0.018px;
+  line-height: 1.5;
+}
+.content-more {
+  display: inline;
+  font-size: 15px;
+  margin-right: 1px;
+  font-weight: bold;
+  color: rgb(5, 92, 245);
+  position: relative;
+}
+.content-more img {
+  width: 24px;
+  height: 24px;
+  top: 1px;
+  position: absolute;
+}
+.first-content-picture img {
+  float: right;
+  width: 375px;
+  height: 400px;
+  left: 0;
+}
+
+/* 메인 컨텐츠 -2 */
+.second-content {
+}
+.second-top-heading {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 64px;
+}
+.second-picture-top {
+  width: 100%;
+  position: relative;
+  height: 288px;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+.head {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.description {
+  font-size: 18px;
+}
+.helper-section {
+  position: absolute;
+  left: 0;
+  background: url("image/main-3-1-desktop@2x.jpg");
+  width: 398px;
+  height: 290px;
+  background-size: cover;
+}
+.helper-heading,
+.move-heading {
+  position: absolute;
+  top: 64px;
+  left: 24px;
+  margin-bottom: 12px;
+  top: 24px;
+}
+.helper-house,
+.move-house {
+  font-size: 18px;
+  position: absolute;
+  top: 72px;
+  left: 24px;
+}
+.move-section {
+  position: absolute;
+  right: 0;
+  background: url("image/main-3-2-desktop@2x.jpg");
+  width: 398px;
+  height: 290px;
+  background-size: cover;
+}
+.second-picture-bottom {
+  position: relative;
+}
+.second-bottom-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.clean-section {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0 20px;
+  padding-bottom: 24px;
+}
+.move-clean,
+.furniture-clean,
+.pet-clean {
+  font-size: 20px;
+  font-weight: bold;
+}
+.move-clean {
+  background: url(image/main-3-3-desktop@2x.jpg);
+  width: 259px;
+  height: 160px;
+  background-size: cover;
+}
+.furniture-clean {
+  background: url(image/main-3-4-desktop@2x.jpg);
+  width: 259px;
+  height: 160px;
+  background-size: cover;
+}
+.pet-clean {
+  background: url(image/main-3-5-desktop@2x.jpg);
+  width: 259px;
+  height: 160px;
+  background-size: cover;
+}
+.service-more {
+  padding: 24px 32px;
+  background-color: rgb(239, 247, 255);
+  position: relative;
+  height: 80px;
+}
+.second {
+  position: absolute;
+  top: 24px;
+  right: 40px;
+  line-height: 1.5;
+}
+.service-description {
+  font-size: 15px;
+  line-height: 1.5;
+  position: absolute;
+  left: 75px;
+  top: 50px;
+}
+.service-heading {
+  position: absolute;
+  left: 75px;
+  top: 15px;
+}
+.service-more img {
+  position: absolute;
+  left: 33px;
+  top: 29px;
+}
+.second-content-border {
+  border: 0.5px solid rgb(218, 221, 226);
+  width: 100%;
+  margin: 88px auto 63px;
+}
+/* 메인 섹션-3 */
+.customer-heading {
+  font-size: 40px;
+  font-weight: bold;
+}
+.customer-subheading {
+  margin-bottom: 64px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.customer-section,
+.download-section,
+.partner-section,
+.app-download {
+  display: flex;
+}
+.customer-image img,
+.app-image img,
+.partner-image img {
+  object-fit: cover;
+  flex: 0 0 auto;
+  width: 409px;
+  height: 300px;
+  margin-right: 48px;
+  margin-bottom: 40px;
+}
+.app-download img {
+  object-fit: cover;
+  width: 128px;
+  height: 38.3px;
+  border-radius: 5px;
+  margin-right: 9.2px;
+  margin-bottom: 0px;
+}
+.bold-description {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.normal-description {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 19px;
+}
+.app-description,
+.partner-description {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 17px;
+}
+/* 메인 섹션-4 */
+.home-service {
+  background-color: rgb(0, 57, 91);
+  width: 100%;
+}
+.home-service-wrapper {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding-left: 0px;
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+.home-service-heading {
+  color: white;
+  font-size: 40px;
+  padding-bottom: 64px;
+  line-height: 46px;
+  margin: 0;
+  flex-direction: column;
+}
+.home-service-box {
+  display: flex;
+  justify-content: center;
+}
+
+.home-service-content {
+  background-color: white;
+  padding: 25px;
+}
+.margin-content {
+  margin: 0 20px;
+}
+.star {
+  margin-top: 5px;
+  margin-bottom: 9px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -1px;
+  text-align: right;
+  color: rgb(255, 200, 31);
+  display: flex;
+  align-items: flex-start;
+}
+.name {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.voc {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 7px;
+  overflow: hidden;
+}
+.home-service-box .content-more {
+  margin-top: 20px;
 }
